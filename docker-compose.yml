@@ -1,0 +1,12 @@
+version: '3'
+services:
+  api:
+    image: mmhk/dify-chatbot-web
+    restart: always
+    environment:
+      APP_ID: "${APP_ID}"
+      APP_KEY: "${APP_KEY}"
+      API_URL: "${API_URL}"
+      NODE_ENV: development
+    ports:
+      - "3000:3000"
